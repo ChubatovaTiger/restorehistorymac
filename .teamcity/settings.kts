@@ -39,6 +39,7 @@ object Project11 : Project({
 
     buildType(a_Build2)
     buildType(build3)
+    buildType(build4)
     buildType(Project11_Build1xx)
 })
 
@@ -72,6 +73,16 @@ object a_Build2 : BuildType({
 
 object build3 : BuildType({
     name = "build3"
+
+    steps {
+        script {
+            scriptContent = "ls"
+        }
+    }
+})
+
+object build4 : BuildType({
+    name = "build4"
 
     steps {
         script {
