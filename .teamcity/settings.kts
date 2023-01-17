@@ -40,10 +40,10 @@ object Project11 : Project({
     buildType(a_Build2)
     buildType(build311)
     buildType(build41)
-    buildType(Project11_Build1xx)
+    buildType(Project11_Build1xx2)
 })
 
-object Project11_Build1xx : BuildType({
+object Project11_Build1xx2 : BuildType({
     name = "build1"
 
     triggers {
