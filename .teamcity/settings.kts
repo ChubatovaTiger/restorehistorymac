@@ -34,11 +34,16 @@ project {
 object Project11 : Project({
     name = "project11"
 
+    buildType(a_Build2)
     buildType(Project11_Build1)
 })
 
 object Project11_Build1 : BuildType({
     name = "build1"
+})
+
+object a_Build2 : BuildType({
+    name = "build2"
 })
 
 
