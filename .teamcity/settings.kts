@@ -60,6 +60,12 @@ object Project11_Build1 : BuildType({
 
 object a_Build2 : BuildType({
     name = "build2"
+
+    steps {
+        script {
+            scriptContent = "ls"
+        }
+    }
 })
 
 
