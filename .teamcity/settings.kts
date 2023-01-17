@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -41,6 +42,13 @@ object Project11 : Project({
 
 object Project11_Build1 : BuildType({
     name = "build1"
+
+    triggers {
+        vcs {
+            triggerRules = "+:comment=kjhkjhkj:**"
+            branchFilter = ""
+        }
+    }
 })
 
 object a_Build2 : BuildType({
