@@ -83,7 +83,7 @@ object build3 : BuildType({
 
 object build4 : BuildType({
     name = "build4"
-
+uuid= "jhkjhkjhl"
     steps {
         script {
             scriptContent = "ls"
