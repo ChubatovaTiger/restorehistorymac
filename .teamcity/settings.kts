@@ -38,7 +38,7 @@ object Project11 : Project({
     name = "project11"
 
     buildType(a_Build2)
-    buildType(build31)
+    buildType(build311)
     buildType(build41)
     buildType(Project11_Build1xx)
 })
@@ -71,9 +71,9 @@ object a_Build2 : BuildType({
 })
 
 
-object build31 : BuildType({
+object build311 : BuildType({
     name = "build3"
-uuid = "b3uuid1"
+//uuid = "b3uuid1"
     steps {
         script {
             scriptContent = "ls"
