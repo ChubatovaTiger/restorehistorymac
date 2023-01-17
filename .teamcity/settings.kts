@@ -37,7 +37,7 @@ project {
 object Project11 : Project({
     name = "project11"
 
-    buildType(a_Build2)
+    //buildType(a_Build2)
     buildType(Project11_Build1)
 })
 
@@ -58,7 +58,7 @@ object Project11_Build1 : BuildType({
     }
 })
 
-object a_Build2 : BuildType({
+/*object a_Build2 : BuildType({
     name = "build2"
 
     steps {
@@ -67,15 +67,15 @@ object a_Build2 : BuildType({
         }
     }
 })
-
+*/
 
 object Project12 : Project({
     name = "project12"
 
-    buildType(Project12_Build1)
+    //buildType(Project12_Build1)
 })
 
-object Project12_Build1 : BuildType({
+/*object Project12_Build1 : BuildType({
     name = "build1"
 
     params {
@@ -88,3 +88,4 @@ object Project12_Build1 : BuildType({
         }
     }
 })
+*/
