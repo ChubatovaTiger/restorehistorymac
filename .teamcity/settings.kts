@@ -94,7 +94,7 @@ uuid= "jhkjhkjhl"
 
 object build5 : BuildType({
     name = "build5"
-//uuid= "jhkjhkjhl"
+uuid= "83aeade1-6340-4684-8f3f-e8092c1d5eef"
     steps {
         script {
             scriptContent = "ls"
