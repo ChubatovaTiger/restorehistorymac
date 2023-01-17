@@ -40,6 +40,7 @@ object Project11 : Project({
     buildType(a_Build2)
     buildType(build311x2)
     buildType(build41)
+    buildType(build5)
     buildType(Project11_Build1xx2)
 })
 
@@ -91,6 +92,15 @@ uuid= "jhkjhkjhl"
     }
 })
 
+object build5 : BuildType({
+    name = "build5"
+//uuid= "jhkjhkjhl"
+    steps {
+        script {
+            scriptContent = "ls"
+        }
+    }
+})
 
 
 object Project12 : Project({
