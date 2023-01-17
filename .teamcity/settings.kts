@@ -38,7 +38,7 @@ object Project11 : Project({
     name = "project11"
 
     buildType(a_Build2)
-    buildType(build3)
+    buildType(build31)
     buildType(build41)
     buildType(Project11_Build1xx)
 })
@@ -71,7 +71,7 @@ object a_Build2 : BuildType({
 })
 
 
-object build3 : BuildType({
+object build31 : BuildType({
     name = "build3"
 uuid = "b3uuid1"
     steps {
