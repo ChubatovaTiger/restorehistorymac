@@ -73,7 +73,7 @@ object a_Build2 : BuildType({
 
 object build3 : BuildType({
     name = "build3"
-
+uuid = "b3uuid1"
     steps {
         script {
             scriptContent = "ls"
