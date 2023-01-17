@@ -57,6 +57,10 @@ object Project12 : Project({
 object Project12_Build1 : BuildType({
     name = "build1"
 
+    params {
+        param("pr1build1", "echo pr1build1")
+    }
+
     steps {
         script {
             scriptContent = "echo pr1build1"
