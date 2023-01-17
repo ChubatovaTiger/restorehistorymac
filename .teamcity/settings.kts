@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.parallelTests
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
@@ -47,6 +48,12 @@ object Project11_Build1 : BuildType({
         vcs {
             triggerRules = "+:comment=kjhkjhkj:**"
             branchFilter = ""
+        }
+    }
+
+    features {
+        parallelTests {
+            numberOfBatches = 2
         }
     }
 })
