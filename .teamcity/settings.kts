@@ -73,7 +73,9 @@ object Project12 : Project({
     name = "project12"
 
     buildType(Project12_Build1)
+    buildType(Project12_Build1copy)
 })
+
 object Project12_Build1 : BuildType({
     name = "build1"
 
@@ -88,3 +90,16 @@ object Project12_Build1 : BuildType({
     }
 })
 
+object Project12_Build1copy : BuildType({
+    name = "build1copy"
+
+    params {
+        param("pr1build1", "echo pr1build1")
+    }
+
+    steps {
+        script {
+            scriptContent = "echo pr1build1"
+        }
+    }
+})
