@@ -204,13 +204,13 @@ object Project13_Project131_B2 : BuildType({
     name = "b2"
 
     params {
-        param("cat", "b")
+        param("bober", "b")
     }
 
     steps {
         script {
-            name = "cat"
-            scriptContent = "echo cat"
+            name = "bober"
+            scriptContent = "echo bober"
         }
     }
 
