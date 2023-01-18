@@ -26,10 +26,10 @@ version = "2022.10"
 
 project {
 
-    buildType(B3)
+    buildType(B4)
 }
 
-object B3 : BuildType({
+object B4 : BuildType({
     templates(AbsoluteId(DslContext.getParameter(name = "tmpl")))
     name = "b11"
 })
