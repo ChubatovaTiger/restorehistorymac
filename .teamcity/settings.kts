@@ -141,7 +141,7 @@ object Project13 : Project({
 
     buildType(Project13_B1)
     //buildType(Project13_B2)
-    buildType(Project13_newbt4)
+    buildType(Project13_newbt5)
 
     subProject(Project13_Project131)
 })
@@ -167,10 +167,10 @@ object Project13_B1 : BuildType({
     }
 })
 
-object Project13_newbt4 : BuildType({
+object Project13_newbt5 : BuildType({
     name = "b2"
 
-    params {
+    /*params {
         param("tiger", "a")
     }
 
@@ -191,7 +191,7 @@ object Project13_newbt4 : BuildType({
         parallelTests {
             numberOfBatches = 2
         }
-    }/*
+    }*/
     params {
         param("cat", "b")
     }
@@ -213,14 +213,14 @@ object Project13_newbt4 : BuildType({
         merge {
             branchFilter = "+:<default>"
         }
-    }*/
+    }
 })
 
 
 object Project13_Project131 : Project({
     name = "project131"
 
-    buildType(Project13_Project131_B2)
+    //buildType(Project13_Project131_B2)
 })
 
 object Project13_Project131_B2 : BuildType({
