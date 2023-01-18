@@ -139,8 +139,8 @@ object Project12_Build1copy : BuildType({
 object Project13 : Project({
     name = "project13"
 
-    //buildType(Project13_B1)
-    buildType(Project13_newbt)
+    buildType(Project13_B1)
+    buildType(Project13_B2)
 
     subProject(Project13_Project131)
 })
@@ -166,23 +166,29 @@ object Project13_B1 : BuildType({
     }
 })
 
-object Project13_newbt : BuildType({
-    name = "newbt"
+object Project13_B2 : BuildType({
+    name = "b2"
 
     params {
-        param("tiger", "a")
+        param("cat", "a")
     }
 
     steps {
         script {
-            scriptContent = "echo tiger"
+            scriptContent = "echo cat"
         }
     }
 
     triggers {
-        vcs {
-            triggerRules = "+:comment=kjkjk:**"
+        schedule {
             branchFilter = ""
+            triggerBuild = always()
+        }
+    }
+
+    features {
+        parallelTests {
+            numberOfBatches = 2
         }
     }
 })
