@@ -141,7 +141,7 @@ object Project13 : Project({
 
     buildType(Project13_B1)
     //buildType(Project13_B2)
-    //buildType(Project13_newbt)
+    buildType(Project13_newbt)
 
     subProject(Project13_Project131)
 })
