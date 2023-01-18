@@ -29,8 +29,9 @@ version = "2022.10"
 
 project {
 
-    buildType(B11)
-    buildType(B21)
+    //buildType(B11)
+    //buildType(B21)
+    buildType(B31)
 
     template(B1_2)
     template(B2_2)
@@ -44,6 +45,11 @@ object B11 : BuildType({
 object B21 : BuildType({
     templates(B2_2)
     name = "b21"
+})
+
+object B31 : BuildType({
+    templates(B2_2)
+    name = "b31"
 })
 
 object B1_2 : Template({
