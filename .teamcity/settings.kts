@@ -140,7 +140,7 @@ object Project13 : Project({
     name = "project13"
 
     buildType(Project13_B1)
-    buildType(Project13_B2)
+    buildType(Project13_newbt)
 
     subProject(Project13_Project131)
 })
@@ -166,29 +166,29 @@ object Project13_B1 : BuildType({
     }
 })
 
-object Project13_B2 : BuildType({
+object Project13_newbt : BuildType({
     name = "b2"
 
-    params {
-        param("cat", "a")
+     params {
+        param("cat", "b")
     }
 
     steps {
         script {
+            name = "cat"
             scriptContent = "echo cat"
         }
     }
 
     triggers {
-        schedule {
+        retryBuild {
             branchFilter = ""
-            triggerBuild = always()
         }
     }
 
     features {
-        parallelTests {
-            numberOfBatches = 2
+        merge {
+            branchFilter = "+:<default>"
         }
     }
 })
@@ -197,7 +197,7 @@ object Project13_B2 : BuildType({
 object Project13_Project131 : Project({
     name = "project131"
 
-    buildType(Project13_Project131_B2)
+    //buildType(Project13_Project131_B2)
 })
 
 object Project13_Project131_B2 : BuildType({
