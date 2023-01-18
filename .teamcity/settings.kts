@@ -192,7 +192,7 @@ object Project13_newbt5 : BuildType({
 
 object Project13_withuuid5 : BuildType({
     name = "withuuid"
-uuid="kjhkjhkjhkjhsdkkjlkjsdkj"
+//uuid="kjhkjhkjhkjhsdkkjlkjsdkj"
      params {
         param("bbbbbh", "b")
     }
