@@ -167,7 +167,7 @@ object Project13_B1 : BuildType({
     }
 })
 
-object Project13_newbt5 : BuildType({
+object Project13_newbt6 : BuildType({
     name = "b2"
 
     /*params {
