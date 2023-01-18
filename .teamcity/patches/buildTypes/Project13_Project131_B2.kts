@@ -14,6 +14,10 @@ create(RelativeId("Project13_Project131"), BuildType({
     id("Project13_Project131_B2")
     name = "b2"
 
+    params {
+        param("cat", "b")
+    }
+
     steps {
         script {
             name = "cat"
