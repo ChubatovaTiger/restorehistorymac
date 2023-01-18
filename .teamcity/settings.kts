@@ -4,7 +4,7 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.script
 version = "2022.10"
 
 project {
-buildType(buid1)
+buildType(build1)
 }
 
 object build1 : BuildType({
