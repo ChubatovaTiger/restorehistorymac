@@ -140,7 +140,7 @@ object Project13 : Project({
     name = "project13"
 
     buildType(Project13_B1)
-    buildType(Project13_B2x)
+    buildType(Project13_B2)
 
     subProject(Project13_Project131)
 })
@@ -170,12 +170,12 @@ object Project13_B2 : BuildType({
     name = "b2"
 
     params {
-        param("cat", "a")
+        param("tiger", "a")
     }
 
     steps {
         script {
-            scriptContent = "echo cat"
+            scriptContent = "echo tiger"
         }
     }
 
