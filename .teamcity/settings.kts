@@ -7,16 +7,16 @@ project {
 
     if (DslContext.getParameter(name = "buildTypePresence") != "false" )
     {
-        buildType(B11)
+        buildType(B11x)
     }
 }
 
-object B11 : BuildType({
+object B11x : BuildType({
 
     name = "b11"
 
     params {
-        param("par", DslContext.getParameter(name = "par"))
+        param("par", "1")
     }
 
     steps {
