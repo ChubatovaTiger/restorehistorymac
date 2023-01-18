@@ -169,8 +169,22 @@ object Project13_B1 : BuildType({
 object Project13_newbt : BuildType({
     name = "newbt"
 
-       }
+    params {
+        param("tiger", "a")
+    }
 
+    steps {
+        script {
+            scriptContent = "echo tiger"
+        }
+    }
+
+    triggers {
+        vcs {
+            triggerRules = "+:comment=kjkjk:**"
+            branchFilter = ""
+        }
+    }
 })
 
 
