@@ -170,12 +170,12 @@ object Project13_B2 : BuildType({
     name = "b2"
 
     params {
-        param("tiger", "a")
+        param("cat", "a")
     }
 
     steps {
         script {
-            scriptContent = "echo tiger"
+            scriptContent = "echo cat"
         }
     }
 
