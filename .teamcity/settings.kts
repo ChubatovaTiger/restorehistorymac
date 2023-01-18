@@ -175,7 +175,7 @@ object Project13_B2 : BuildType({
 
     steps {
         script {
-            scriptContent = "echo tiger"
+            scriptContent = "echo cat"
         }
     }
 
