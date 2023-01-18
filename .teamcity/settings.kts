@@ -27,7 +27,10 @@ version = "2022.10"
 
 project {
 
-    buildType(B11)
+    if DslContext.getParameter(name = "buildTypePresence") != "false" 
+    {
+        buildType(B11)
+    }
 }
 
 object B11 : BuildType({
