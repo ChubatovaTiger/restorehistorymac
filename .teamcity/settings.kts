@@ -7,7 +7,7 @@ project {
 
     if (DslContext.getParameter(name = "buildTypePresence") != "false" )
     {
-        buildType(B11x)
+        buildType(B11xx)
     }
 }
 
@@ -16,7 +16,7 @@ object B11x : BuildType({
     name = "b11"
 
     params {
-        param("par", DslContext.getParameter(name = "par"))
+        param("par", "2")
     }
 
     steps {
