@@ -30,7 +30,7 @@ object B11x : BuildType({
 
     params {
 
-        param("par", "2")
+        param("par", DslContext.getParameter(name = "par"))
 
     }
 
