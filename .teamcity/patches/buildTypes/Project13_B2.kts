@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.BuildType
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.schedule
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -16,6 +17,12 @@ create(RelativeId("Project13"), BuildType({
 
     params {
         param("tiger", "a")
+    }
+
+    steps {
+        script {
+            scriptContent = "echo tiger"
+        }
     }
 
     triggers {
