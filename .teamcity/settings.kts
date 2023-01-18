@@ -141,7 +141,7 @@ object Project13 : Project({
 
     buildType(Project13_B1)
     buildType(Project13_newbt5)
-
+buildType(Project13_withuuid)
     subProject(Project13_Project131)
 })
 
@@ -188,6 +188,31 @@ object Project13_newbt5 : BuildType({
 
 
 })
+
+
+object Project13_withuuid : BuildType({
+    name = "withuuid"
+uuid="asdkajdlaksjdlaksjd"
+     params {
+        param("bbbbb", "b")
+    }
+
+    steps {
+        script {
+            name = "bbbbbb"
+            scriptContent = "echo bbbbb"
+        }
+    }
+
+    triggers {
+        retryBuild {
+            branchFilter = ""
+        }
+    }
+
+
+})
+
 
 
 object Project13_Project131 : Project({
