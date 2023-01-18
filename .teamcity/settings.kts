@@ -139,8 +139,8 @@ object Project12_Build1copy : BuildType({
 object Project13 : Project({
     name = "project13"
 
-    buildType(Project13_B1)
-    buildType(Project13_B2)
+    //buildType(Project13_B1)
+    buildType(Project13_B2x)
 
     subProject(Project13_Project131)
 })
@@ -166,8 +166,8 @@ object Project13_B1 : BuildType({
     }
 })
 
-object Project13_B2 : BuildType({
-    name = "b2"
+object Project13_B2x : BuildType({
+    name = "newbt"
 
     params {
         param("cat", "a")
