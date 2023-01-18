@@ -186,11 +186,7 @@ uuid="asdkajdlaksjdlaksjd"
         }
     }
 
-    features {
-        merge {
-            branchFilter = "+:<default>"
-        }
-    }
+
 })
 
 
