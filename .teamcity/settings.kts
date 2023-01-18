@@ -13,14 +13,14 @@ project {
 
 
 
-        buildType(B11)
+        buildType(B11x)
 
 
 }
 
 
 
-object B11 : BuildType({
+object B11x : BuildType({
 
 
 
@@ -30,7 +30,7 @@ object B11 : BuildType({
 
     params {
 
-        param("par", DslContext.getParameter(name = "par"))
+        param("par", "2")
 
     }
 
