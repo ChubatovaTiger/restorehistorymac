@@ -220,9 +220,5 @@ object Project13_Project131_B2 : BuildType({
         }
     }
 
-    features {
-        merge {
-            branchFilter = "+:<default>"
-        }
-    }
+
 })
