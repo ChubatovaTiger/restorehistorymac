@@ -12,7 +12,7 @@ project {
 }
 
 object B11 : BuildType({
-    templates(AbsoluteId("Project1_B1_2"))
+
     name = "b11"
 
     params {
