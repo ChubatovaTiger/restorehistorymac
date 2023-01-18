@@ -16,7 +16,7 @@ object B11 : BuildType({
     name = "b11"
 
     params {
-        param("par, DslContext.getParameter(name = "par"))
+        param("par", DslContext.getParameter(name = "par"))
     }
 
     steps {
