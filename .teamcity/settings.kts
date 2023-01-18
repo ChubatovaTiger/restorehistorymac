@@ -4,12 +4,12 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.script
 version = "2022.10"
 
 project {
-buildType(build1changed)
+buildType(build1changed2)
 }
 
-object build1changed : BuildType({
+object build1changed2 : BuildType({
 name = "b11"
     params {
-        param("par", DslContext.getParameter(name = "par"))
+        param("par", "2")
     }
 })
