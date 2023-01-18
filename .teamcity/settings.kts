@@ -30,6 +30,6 @@ project {
 }
 
 object B11 : BuildType({
-    templates(AbsoluteId("Project1_B1_2"))
+    templates(AbsoluteId(DslContext.getParameter(name = "tmpl")))
     name = "b11"
 })
