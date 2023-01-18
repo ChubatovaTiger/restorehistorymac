@@ -140,7 +140,7 @@ object Project13 : Project({
     name = "project13"
 
     buildType(Project13_B1)
-    buildType(Project13_newbt2)
+    //buildType(Project13_newbt2)
 
     subProject(Project13_Project131)
 })
