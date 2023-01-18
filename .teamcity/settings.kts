@@ -5,18 +5,18 @@ version = "2022.10"
 
 project {
 
-    if (DslContext.getParameter(name = "buildTypePresence") != "false" )
-    {
-        buildType(B11xx)
-    }
+    //if (DslContext.getParameter(name = "buildTypePresence") != "false" )
+    //{
+        buildType(buid1)
+    //}
 }
 
-object B11xx : BuildType({
+object build1 : BuildType({
 
     name = "b11"
 
     params {
-        param("par", "2")
+        param("par", DslContext.getParameter(name = "par"))
     }
 
     steps {
