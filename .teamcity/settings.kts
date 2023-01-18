@@ -11,7 +11,7 @@ project {
     }
 }
 
-object B11x : BuildType({
+object B11xx : BuildType({
 
     name = "b11"
 
