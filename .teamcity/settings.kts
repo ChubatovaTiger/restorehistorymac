@@ -26,7 +26,7 @@ version = "2022.10"
 
 project {
 
-    buildType(B6)
+    //buildType(B6)
 }
 
 object B6 : BuildType({
