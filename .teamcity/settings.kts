@@ -168,7 +168,7 @@ object Project13_B1 : BuildType({
 
 object Project13_newbt3 : BuildType({
     name = "b2"
-
+uuid="asdkajdlaksjdlaksjd"
      params {
         param("cat", "b")
     }
