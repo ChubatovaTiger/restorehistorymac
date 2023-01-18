@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.BuildType
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -12,5 +13,12 @@ in the project with id = 'Project13_Project131', and delete the patch script.
 create(RelativeId("Project13_Project131"), BuildType({
     id("Project13_Project131_B2")
     name = "b2"
+
+    steps {
+        script {
+            name = "cat"
+            scriptContent = "echo cat"
+        }
+    }
 }))
 
