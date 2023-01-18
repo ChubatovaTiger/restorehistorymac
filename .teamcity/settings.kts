@@ -16,7 +16,7 @@ object B11x : BuildType({
     name = "b11"
 
     params {
-        param("par", "2"))
+        param("par", "2")
     }
 
     steps {
