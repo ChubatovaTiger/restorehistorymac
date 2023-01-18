@@ -141,7 +141,7 @@ object Project13 : Project({
 
     buildType(Project13_B1)
     buildType(Project13_newbt5)
-buildType(Project13_withuuid)
+buildType(Project13_withuuid2)
     subProject(Project13_Project131)
 })
 
@@ -190,7 +190,7 @@ object Project13_newbt5 : BuildType({
 })
 
 
-object Project13_withuuid : BuildType({
+object Project13_withuuid2 : BuildType({
     name = "withuuid"
 //uuid="kjhkjhkjhkjh"
      params {
