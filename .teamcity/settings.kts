@@ -145,7 +145,7 @@ object Project13 : Project({
     subProject(Project13_Project131)
 })
 
-object Project13_B1x : BuildType({
+object Project13_B1 : BuildType({
     name = "b1"
 
     params {
