@@ -32,7 +32,7 @@ project {
 object B8 : BuildType({
     templates(AbsoluteId("Project1_B1_2"))
     name = "b11"
-    id("bоооо")
+    id("bsdlkjlkj")
 
     params {
         param("aa", "aa")
