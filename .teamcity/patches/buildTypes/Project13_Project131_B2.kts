@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.BuildType
+import jetbrains.buildServer.configs.kotlin.buildFeatures.merge
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.retryBuild
 import jetbrains.buildServer.configs.kotlin.ui.*
@@ -29,6 +30,12 @@ create(RelativeId("Project13_Project131"), BuildType({
     triggers {
         retryBuild {
             branchFilter = ""
+        }
+    }
+
+    features {
+        merge {
+            branchFilter = "+:<default>"
         }
     }
 }))
