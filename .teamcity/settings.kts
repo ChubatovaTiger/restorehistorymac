@@ -10,6 +10,6 @@ buildType(build1changed3)
 object build1changed3 : BuildType({
 name = "b11"
     params {
-        param("par", DslContext.getParameter(name = "par"))
+        param("par", "2")
     }
 })
