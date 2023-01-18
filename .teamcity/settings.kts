@@ -197,7 +197,7 @@ object Project13_newbt : BuildType({
 object Project13_Project131 : Project({
     name = "project131"
 
-    //buildType(Project13_Project131_B2)
+    buildType(Project13_Project131_B2)
 })
 
 object Project13_Project131_B2 : BuildType({
